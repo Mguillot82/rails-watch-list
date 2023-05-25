@@ -1,0 +1,8 @@
+<%= form_with model: @movie do |form| %>
+  <%= form.label :title %>
+  <%= form.text_field :title %>
+  <%= form.label :overview %>
+  <%= form.text_field :overview %>
+  <%= form.select :rating, [0, 1, 2, 3, 4, 5] %>
+  <%= form.submit %>
+<% end %>

@@ -1,0 +1,11 @@
+<%= link_to 'back to reality? Maybe?', "/" %>
+
+<h2><%= @movie.title%></h2>
+<p><%= @movie.overview%></p>
+<p><%= @movie.rating%></p>
+
+<%= link_to 'Edit a movie brother', "#{@movie.id}/edit" %>
+<%= link_to "Delete",
+  movie_path(@movie),
+  data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}
+%>

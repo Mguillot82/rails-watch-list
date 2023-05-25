@@ -1,5 +1,5 @@
-class MovieController < ApplicationController
-  before_action :set_restaurant, only: %i[show edit update destroy]
+class MoviesController < ApplicationController
+  before_action :set_movie, only: %i[show edit update destroy]
 
   def new
     @movie = Movie.new
@@ -12,13 +12,12 @@ class MovieController < ApplicationController
   end
 
   def index
-    @restaurants = Movie.all
+    @movies = Movie.all
   end
 
-  def show; end;
+  def show; end
 
-  def edit
-  end
+  def edit; end
 
   def update
     @movie.update(movie_params)
@@ -26,16 +25,14 @@ class MovieController < ApplicationController
   end
 
   def destroy
-    reviews = @movie.reviews
-    reviews.each(&:destroy)
-    @movie.destroy
+    @movie.destroy unless @movie.bookmarks.nil?
     redirect_to movies_path, status: :see_other
   end
 
   private
 
   def movie_params
-    params.require(:movie).permit(:name, :address, :phone_number, :category)
+    params.require(:movie).permit(:title, :overview, :rating)
   end
 
   def set_movie
