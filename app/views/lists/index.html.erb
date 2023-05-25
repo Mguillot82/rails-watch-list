@@ -1,0 +1,13 @@
+<nav class="navbar bg-body-tertiary bg-light ">
+    <h1 class="navbar-text text-black-50"> Lists</h1>
+  </nav>
+    <ul class="list-group">
+      <%@lists.each do |list|%>
+      <li class="list-group-item ">
+        <h3><%= "#{list['id']}"%>
+        <div class="fw-bold"><%= link_to "#{list['name']}", "lists/#{list['id']}"%></div>
+      </li>
+      <% end %>
+    </ul>
+
+    <%= link_to 'Create a list brother', 'lists/new' %>

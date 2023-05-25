@@ -1,0 +1,21 @@
+<%= link_to 'back to reality? Maybe?', "/" %>
+
+<h2><%= @list.id%></h2>
+<h2><%= @list.name%></h2>
+ <ul class="list-group">
+      <%@list.bookmarks.each do |bookmark|%>
+      <li class="list-group-item ">
+        <div class="fw-bold"><%= link_to "#{bookmark.movie['title']}", "../movies/#{bookmark.movie['id']}"%></div>
+        <div class=""> <%= bookmark['comment']%></div>
+      </li>
+      <% end %>
+    </ul>
+
+
+
+<%= link_to 'Edit a list brother', "#{@list.id}/edit" %>
+<%= link_to "Delete",
+  list_path(@list),
+  data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}
+%>
+<%= link_to 'Bookmarks New', "#{@list.id}/bookmarks/new" %>

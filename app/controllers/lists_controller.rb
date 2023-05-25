@@ -2,17 +2,21 @@ class ListsController < ApplicationController
   before_action :set_list, only: %i[show edit update destroy]
 
   def new
-    @List = List.new
+    @list = List.new
   end
 
   def create
-    @List = List.new(list_params)
-    @List.save
-    redirect_to new_movie_list_path(@List)
+    @list = List.new(list_params)
+    if @list.save
+      @list.save
+      redirect_to list_path(@list)
+    else
+      redirect_to new_list_path(@list)
+    end
   end
 
   def index
-    @restaurants = List.all
+    @lists = List.all
   end
 
   def show; end
@@ -20,12 +24,14 @@ class ListsController < ApplicationController
   def edit; end
 
   def update
-    @List.update(list_params)
-    redirect_to list_path(@List)
+    @list.update(list_params)
+    redirect_to list_path(@list)
   end
 
   def destroy
-    @List.destroy
+    bookmarks = @list.bookmarks
+    bookmarks.each(&:destroy)
+    @list.destroy
     redirect_to lists_path, status: :see_other
   end
 
@@ -35,8 +41,7 @@ class ListsController < ApplicationController
     params.require(:list).permit(:name)
   end
 
-  def set_movie
-    @movie = Movie.find(params[:movie_id])
+  def set_list
+    @list = List.find(params[:id])
   end
-
 end

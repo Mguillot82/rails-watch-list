@@ -1,0 +1,7 @@
+<%= form_with model: [@list, @bookmark] do |form| %>
+  <%= form.select :movie_id, collection: Movie.all.map { |m| m.id } %>
+  <%= form.hidden_field :list_id, value: @list.id %>
+  <%= form.label :comment, "Comment" %>
+  <%= form.text_field :comment %>
+  <%= form.submit "Create a new bookmark bruddah" %>
+<% end %>
