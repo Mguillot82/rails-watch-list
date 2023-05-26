@@ -1,0 +1,2029 @@
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE DATABASE "rails_watch_list_development" ENCODING = 'unicode'[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE DATABASE "rails_watch_list_test" ENCODING = 'unicode'[0m
+Started GET "/lists" for ::1 at 2023-05-26 12:09:35 +0200
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ListsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (0.7ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  ↳ app/views/lists/index.html.erb:13
+  Rendered lists/index.html.erb within layouts/application (Duration: 4.5ms | Allocations: 1609)
+  Rendered layout layouts/application.html.erb (Duration: 6364.2ms | Allocations: 168770)
+Completed 500 Internal Server Error in 6391ms (ActiveRecord: 0.7ms | Allocations: 176320)
+
+
+  
+ActionView::Template::Error (The asset "application.js" is not present in the asset pipeline.
+):
+     7:     <%= csp_meta_tag %>
+     8: 
+     9:     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    10:     <%= javascript_include_tag "application", "data-turbo-track": "reload", defer: true %>
+    11:   </head>
+    12:   <body>
+    13:     <%= render 'shared/navbar' %>
+  
+app/views/layouts/application.html.erb:10
+Started GET "/lists" for ::1 at 2023-05-26 12:10:57 +0200
+Processing by ListsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (0.2ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  ↳ app/views/lists/index.html.erb:13
+  Rendered lists/index.html.erb within layouts/application (Duration: 2.6ms | Allocations: 1061)
+  Rendered layout layouts/application.html.erb (Duration: 30.1ms | Allocations: 17960)
+Completed 500 Internal Server Error in 32ms (ActiveRecord: 0.2ms | Allocations: 18759)
+
+
+  
+ActionView::Template::Error (undefined method `javascript_pack_tag' for #<ActionView::Base:0x00000000009b28>
+
+    '.freeze;@output_buffer.append=( javascript_pack_tag "application", "data-turbo-track": "reload", defer: true );@output_buffer.safe_append='
+                                     ^^^^^^^^^^^^^^^^^^^
+Did you mean?  javascript_path
+               javascript_tag):
+     7:     <%= csp_meta_tag %>
+     8: 
+     9:     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    10:     <%= javascript_pack_tag "application", "data-turbo-track": "reload", defer: true %>
+    11:   </head>
+    12:   <body>
+    13:     <%= render 'shared/navbar' %>
+  
+app/views/layouts/application.html.erb:10
+Started GET "/lists" for ::1 at 2023-05-26 12:12:07 +0200
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ListsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (0.5ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  ↳ app/views/lists/index.html.erb:13
+  Rendered lists/index.html.erb within layouts/application (Duration: 17.8ms | Allocations: 1501)
+  Rendered layout layouts/application.html.erb (Duration: 173.1ms | Allocations: 53443)
+Completed 500 Internal Server Error in 207ms (ActiveRecord: 0.5ms | Allocations: 59483)
+
+
+  
+ActionView::Template::Error (The asset "application.js" is not present in the asset pipeline.
+):
+     7:     <%= csp_meta_tag %>
+     8: 
+     9:     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    10:     <%= javascript_include_tag "application", "data-turbo-track": "reload", defer: true %>
+    11:   </head>
+    12:   <body>
+    13:     <%= render 'shared/navbar' %>
+  
+app/views/layouts/application.html.erb:10
+Started GET "/lists" for ::1 at 2023-05-26 12:13:08 +0200
+Processing by ListsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (0.2ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  ↳ app/views/lists/index.html.erb:13
+  Rendered lists/index.html.erb within layouts/application (Duration: 2.4ms | Allocations: 1061)
+  Rendered shared/_navbar.html.erb (Duration: 1.6ms | Allocations: 929)
+  Rendered shared/_flashes.html.erb (Duration: 0.4ms | Allocations: 236)
+  Rendered layout layouts/application.html.erb (Duration: 19.6ms | Allocations: 14978)
+Completed 200 OK in 22ms (Views: 21.0ms | ActiveRecord: 0.2ms | Allocations: 15846)
+
+
+Started GET "/tom-select/dist/css/tom-select.css" for ::1 at 2023-05-26 12:13:08 +0200
+Started GET "/star-rating.js/dist/star-rating.css" for ::1 at 2023-05-26 12:13:08 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/tom-select/dist/css/tom-select.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/star-rating.js/dist/star-rating.css"):
+  
+Started GET "/lists/new" for ::1 at 2023-05-26 12:13:13 +0200
+Processing by ListsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering lists/new.html.erb within layouts/application
+  Rendered lists/new.html.erb within layouts/application (Duration: 73.6ms | Allocations: 21787)
+  Rendered shared/_navbar.html.erb (Duration: 0.9ms | Allocations: 653)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 37)
+  Rendered layout layouts/application.html.erb (Duration: 85.5ms | Allocations: 30899)
+Completed 200 OK in 95ms (Views: 86.0ms | ActiveRecord: 3.5ms | Allocations: 34039)
+
+
+Started GET "/tom-select/dist/css/tom-select.css" for ::1 at 2023-05-26 12:13:13 +0200
+Started GET "/star-rating.js/dist/star-rating.css" for ::1 at 2023-05-26 12:13:13 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/tom-select/dist/css/tom-select.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/star-rating.js/dist/star-rating.css"):
+  
+Started POST "/lists" for ::1 at 2023-05-26 12:13:15 +0200
+Processing by ListsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "list"=>{"name"=>""}, "commit"=>"Create List"}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/lists_controller.rb:19:in `create'
+  [1m[36mList Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "lists" WHERE "lists"."name" = $1 LIMIT $2[0m  [["name", ""], ["LIMIT", 1]]
+  ↳ app/controllers/lists_controller.rb:19:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/lists_controller.rb:19:in `create'
+  Rendering layout layouts/application.html.erb
+  Rendering lists/new.html.erb within layouts/application
+  Rendered lists/new.html.erb within layouts/application (Duration: 16.4ms | Allocations: 8533)
+  Rendered shared/_navbar.html.erb (Duration: 1.0ms | Allocations: 649)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 37)
+  Rendered layout layouts/application.html.erb (Duration: 30.8ms | Allocations: 17605)
+Completed 422 Unprocessable Entity in 40ms (Views: 31.3ms | ActiveRecord: 0.7ms | Allocations: 23135)
+
+
+Started GET "/tom-select/dist/css/tom-select.css" for ::1 at 2023-05-26 12:13:15 +0200
+Started GET "/star-rating.js/dist/star-rating.css" for ::1 at 2023-05-26 12:13:15 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/tom-select/dist/css/tom-select.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/star-rating.js/dist/star-rating.css"):
+  
+Started GET "/" for ::1 at 2023-05-26 12:13:16 +0200
+Processing by ListsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (0.2ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  ↳ app/views/lists/index.html.erb:13
+  Rendered lists/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 656)
+  Rendered shared/_navbar.html.erb (Duration: 0.9ms | Allocations: 641)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 31)
+  Rendered layout layouts/application.html.erb (Duration: 14.1ms | Allocations: 10028)
+Completed 200 OK in 15ms (Views: 14.3ms | ActiveRecord: 0.2ms | Allocations: 10290)
+
+
+Started GET "/tom-select/dist/css/tom-select.css" for ::1 at 2023-05-26 12:13:16 +0200
+Started GET "/star-rating.js/dist/star-rating.css" for ::1 at 2023-05-26 12:13:16 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/tom-select/dist/css/tom-select.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/star-rating.js/dist/star-rating.css"):
+  
+Started GET "/lists/new" for ::1 at 2023-05-26 12:13:17 +0200
+Processing by ListsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering lists/new.html.erb within layouts/application
+  Rendered lists/new.html.erb within layouts/application (Duration: 6.6ms | Allocations: 7530)
+  Rendered shared/_navbar.html.erb (Duration: 1.0ms | Allocations: 641)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 31)
+  Rendered layout layouts/application.html.erb (Duration: 19.0ms | Allocations: 16494)
+Completed 200 OK in 20ms (Views: 19.4ms | ActiveRecord: 0.0ms | Allocations: 16763)
+
+
+Started GET "/tom-select/dist/css/tom-select.css" for ::1 at 2023-05-26 12:13:17 +0200
+Started GET "/star-rating.js/dist/star-rating.css" for ::1 at 2023-05-26 12:13:17 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/tom-select/dist/css/tom-select.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/star-rating.js/dist/star-rating.css"):
+  
+Started GET "/lists/new" for ::1 at 2023-05-26 12:13:46 +0200
+Processing by ListsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering lists/new.html.erb within layouts/application
+  Rendered lists/new.html.erb within layouts/application (Duration: 9.7ms | Allocations: 8023)
+  Rendered layout layouts/application.html.erb (Duration: 24.5ms | Allocations: 18931)
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 0.0ms | Allocations: 19706)
+
+
+  
+ActionView::Template::Error (The asset "application.js" is not present in the asset pipeline.
+):
+     7:     <%= csp_meta_tag %>
+     8: 
+     9:     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    10:     <%= javascript_include_tag "application", "data-turbo-track": "reload", defer: true %>
+    11: 
+    12:   </head>
+    13:   <body>
+  
+app/views/layouts/application.html.erb:10
+Started GET "/lists/new" for ::1 at 2023-05-26 12:13:52 +0200
+Processing by ListsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering lists/new.html.erb within layouts/application
+  Rendered lists/new.html.erb within layouts/application (Duration: 8.7ms | Allocations: 8041)
+  Rendered shared/_navbar.html.erb (Duration: 1.4ms | Allocations: 886)
+  Rendered shared/_flashes.html.erb (Duration: 0.4ms | Allocations: 221)
+  Rendered layout layouts/application.html.erb (Duration: 24.8ms | Allocations: 17925)
+Completed 200 OK in 29ms (Views: 26.4ms | ActiveRecord: 0.0ms | Allocations: 18749)
+
+
+Started GET "/tom-select/dist/css/tom-select.css" for ::1 at 2023-05-26 12:13:53 +0200
+Started GET "/star-rating.js/dist/star-rating.css" for ::1 at 2023-05-26 12:13:53 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/tom-select/dist/css/tom-select.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/star-rating.js/dist/star-rating.css"):
+  
+Started GET "/lists/new" for ::1 at 2023-05-26 12:14:10 +0200
+Processing by ListsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering lists/new.html.erb within layouts/application
+  Rendered lists/new.html.erb within layouts/application (Duration: 7.6ms | Allocations: 8011)
+  Rendered layout layouts/application.html.erb (Duration: 21.7ms | Allocations: 18778)
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 0.0ms | Allocations: 19571)
+
+
+  
+ActionView::Template::Error (The asset "application.js" is not present in the asset pipeline.
+):
+     7:     <%= csp_meta_tag %>
+     8: 
+     9:     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    10:     <%= javascript_include_tag "application", "data-turbo-track": "reload", defer: true %>
+    11: 
+    12:   </head>
+    13:   <body>
+  
+app/views/layouts/application.html.erb:10
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE DATABASE "rails_watch_list_development" ENCODING = 'unicode'[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE DATABASE "rails_watch_list_test" ENCODING = 'unicode'[0m
+Started GET "/" for ::1 at 2023-05-26 12:14:33 +0200
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ListsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (0.5ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  ↳ app/views/lists/index.html.erb:13
+  Rendered lists/index.html.erb within layouts/application (Duration: 20.7ms | Allocations: 1501)
+  Rendered layout layouts/application.html.erb (Duration: 170.4ms | Allocations: 50588)
+Completed 500 Internal Server Error in 207ms (ActiveRecord: 0.5ms | Allocations: 56628)
+
+
+  
+ActionView::Template::Error (The asset "application.js" is not present in the asset pipeline.
+):
+     7:     <%= csp_meta_tag %>
+     8: 
+     9:     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    10:     <%= javascript_include_tag "application", "data-turbo-track": "reload", defer: true %>
+    11: 
+    12:   </head>
+    13:   <body>
+  
+app/views/layouts/application.html.erb:10
+Started GET "/lists/new" for ::1 at 2023-05-26 12:17:48 +0200
+Processing by ListsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering lists/new.html.erb within layouts/application
+  Rendered lists/new.html.erb within layouts/application (Duration: 45.4ms | Allocations: 15913)
+  Rendered shared/_navbar.html.erb (Duration: 2.4ms | Allocations: 937)
+  Rendered shared/_flashes.html.erb (Duration: 0.5ms | Allocations: 236)
+  Rendered layout layouts/application.html.erb (Duration: 6422.5ms | Allocations: 151646)
+Completed 200 OK in 6448ms (Views: 6423.3ms | ActiveRecord: 4.0ms | Allocations: 160647)
+
+
+Started GET "/" for ::1 at 2023-05-26 12:17:56 +0200
+Processing by ListsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (0.2ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  ↳ app/views/lists/index.html.erb:13
+  Rendered lists/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 694)
+  Rendered shared/_navbar.html.erb (Duration: 1.0ms | Allocations: 642)
+  Rendered shared/_flashes.html.erb (Duration: 0.2ms | Allocations: 31)
+  Rendered layout layouts/application.html.erb (Duration: 21.3ms | Allocations: 12004)
+Completed 200 OK in 22ms (Views: 21.5ms | ActiveRecord: 0.2ms | Allocations: 12308)
+
+
+  [1m[35m (1.7ms)[0m  [1m[35mCREATE DATABASE "rails-watch-list_development" ENCODING = 'unicode'[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE DATABASE "rails-watch-list_test" ENCODING = 'unicode'[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (26.8ms)[0m  [1m[35mDROP DATABASE IF EXISTS "rails-watch-list_development"[0m
+  [1m[35m (24.0ms)[0m  [1m[35mDROP DATABASE IF EXISTS "rails-watch-list_test"[0m
+  [1m[35m (79.6ms)[0m  [1m[35mCREATE DATABASE "rails-watch-list_development" ENCODING = 'unicode'[0m
+  [1m[35m (92.8ms)[0m  [1m[35mCREATE DATABASE "rails-watch-list_test" ENCODING = 'unicode'[0m
+  [1m[35m (3.0ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (2.0ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5664623546625577800)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateMovies (20220421072200)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (2.8ms)[0m  [1m[35mCREATE TABLE "movies" ("id" bigserial primary key, "title" character varying, "overview" text, "poster_url" character varying, "rating" float, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20220421072200"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateLists (20220421072341)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (2.5ms)[0m  [1m[35mCREATE TABLE "lists" ("id" bigserial primary key, "name" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20220421072341"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateBookmarks (20220421072643)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (3.6ms)[0m  [1m[35mCREATE TABLE "bookmarks" ("id" bigserial primary key, "comment" text, "movie_id" bigint NOT NULL, "list_id" bigint NOT NULL, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, CONSTRAINT "fk_rails_630f44bd39"
+FOREIGN KEY ("movie_id")
+  REFERENCES "movies" ("id")
+, CONSTRAINT "fk_rails_29c05dc16c"
+FOREIGN KEY ("list_id")
+  REFERENCES "lists" ("id")
+)[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE INDEX "index_bookmarks_on_movie_id" ON "bookmarks" ("movie_id")[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE INDEX "index_bookmarks_on_list_id" ON "bookmarks" ("list_id")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20220421072643"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateReviews (20220421075255)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (2.7ms)[0m  [1m[35mCREATE TABLE "reviews" ("id" bigserial primary key, "comment" text, "rating" integer, "list_id" bigint NOT NULL, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, CONSTRAINT "fk_rails_4a5c24a6bd"
+FOREIGN KEY ("list_id")
+  REFERENCES "lists" ("id")
+)[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE INDEX "index_reviews_on_list_id" ON "reviews" ("list_id")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20220421075255"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.5ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2023-05-26 10:20:42.991430"], ["updated_at", "2023-05-26 10:20:42.991430"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(5664623546625577800)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mMovie Load (0.5ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "The Godfather"], ["LIMIT", 1]]
+  [1m[36mMovie Create (0.6ms)[0m  [1m[32mINSERT INTO "movies" ("title", "overview", "poster_url", "rating", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "The Godfather"], ["overview", "Spanning the years 1945 to 1955, a chronicle of the fictional Italian-American Corleone crime family. When organized crime family patriarch, Vito Corleone barely survives an attempt on his life, his youngest son, Michael steps in to take care of the would-be killers, launching a campaign of bloody revenge."], ["poster_url", "https://image.tmdb.org/t/p/original/tmU7GeKVybMWFButWEGl2M4GeiP.jpg"], ["rating", 8.7], ["created_at", "2023-05-26 10:20:52.142278"], ["updated_at", "2023-05-26 10:20:52.142278"]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "The Shawshank Redemption"], ["LIMIT", 1]]
+  [1m[36mMovie Create (0.2ms)[0m  [1m[32mINSERT INTO "movies" ("title", "overview", "poster_url", "rating", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "The Shawshank Redemption"], ["overview", "Framed in the 1940s for the double murder of his wife and her lover, upstanding banker Andy Dufresne begins a new life at the Shawshank prison, where he puts his accounting skills to work for an amoral warden. During his long stretch in prison, Dufresne comes to be admired by the other inmates -- including an older prisoner named Red -- for his integrity and unquenchable sense of hope."], ["poster_url", "https://image.tmdb.org/t/p/original/kXfqcdQKsToO0OUXHcrrNCHDBzO.jpg"], ["rating", 8.7], ["created_at", "2023-05-26 10:20:52.156906"], ["updated_at", "2023-05-26 10:20:52.156906"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "The Godfather Part II"], ["LIMIT", 1]]
+  [1m[36mMovie Create (0.3ms)[0m  [1m[32mINSERT INTO "movies" ("title", "overview", "poster_url", "rating", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "The Godfather Part II"], ["overview", "In the continuing saga of the Corleone crime family, a young Vito Corleone grows up in Sicily and in 1910s New York. In the 1950s, Michael Corleone attempts to expand the family business into Las Vegas, Hollywood and Cuba."], ["poster_url", "https://image.tmdb.org/t/p/original/oo4PVK6AyLZN49BokxDFGyclN86.jpg"], ["rating", 8.6], ["created_at", "2023-05-26 10:20:52.162043"], ["updated_at", "2023-05-26 10:20:52.162043"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Dilwale Dulhania Le Jayenge"], ["LIMIT", 1]]
+  [1m[36mMovie Create (0.2ms)[0m  [1m[32mINSERT INTO "movies" ("title", "overview", "poster_url", "rating", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Dilwale Dulhania Le Jayenge"], ["overview", "Raj is a rich, carefree, happy-go-lucky second generation NRI. Simran is the daughter of Chaudhary Baldev Singh, who in spite of being an NRI is very strict about adherence to Indian values. Simran has left for India to be married to her childhood fiancé. Raj leaves for India with a mission at his hands, to claim his lady love under the noses of her whole family. Thus begins a saga."], ["poster_url", "https://image.tmdb.org/t/p/original/vI3aUGTuRRdM7J78KIdW98LdxE5.jpg"], ["rating", 8.6], ["created_at", "2023-05-26 10:20:52.166835"], ["updated_at", "2023-05-26 10:20:52.166835"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Schindler's List"], ["LIMIT", 1]]
+  [1m[36mMovie Create (0.2ms)[0m  [1m[32mINSERT INTO "movies" ("title", "overview", "poster_url", "rating", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Schindler's List"], ["overview", "The true story of how businessman Oskar Schindler saved over a thousand Jewish lives from the Nazis while they worked as slaves in his factory during World War II."], ["poster_url", "https://image.tmdb.org/t/p/original/zb6fM1CX41D9rF9hdgclu0peUmy.jpg"], ["rating", 8.6], ["created_at", "2023-05-26 10:20:52.171657"], ["updated_at", "2023-05-26 10:20:52.171657"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Cuando Sea Joven"], ["LIMIT", 1]]
+  [1m[36mMovie Create (0.2ms)[0m  [1m[32mINSERT INTO "movies" ("title", "overview", "poster_url", "rating", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Cuando Sea Joven"], ["overview", "70-year-old Malena gets a second chance at life when she magically turns into her 22-year-old self. Now, posing as \"Maria\" to hide her true identity, she becomes the lead singer of her grandson's band and tries to recover her dream of singing, which she had to give up at some point."], ["poster_url", "https://image.tmdb.org/t/p/original/ejnlCzBd5pOGAYCpxC93NXSrdrz.jpg"], ["rating", 8.5], ["created_at", "2023-05-26 10:20:52.176121"], ["updated_at", "2023-05-26 10:20:52.176121"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Spirited Away"], ["LIMIT", 1]]
+  [1m[36mMovie Create (0.2ms)[0m  [1m[32mINSERT INTO "movies" ("title", "overview", "poster_url", "rating", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Spirited Away"], ["overview", "A young girl, Chihiro, becomes trapped in a strange new world of spirits. When her parents undergo a mysterious transformation, she must call upon the courage she never knew she had to free her family."], ["poster_url", "https://image.tmdb.org/t/p/original/Ab8mkHmkYADjU7wQiOkia9BzGvS.jpg"], ["rating", 8.5], ["created_at", "2023-05-26 10:20:52.180845"], ["updated_at", "2023-05-26 10:20:52.180845"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "12 Angry Men"], ["LIMIT", 1]]
+  [1m[36mMovie Create (0.2ms)[0m  [1m[32mINSERT INTO "movies" ("title", "overview", "poster_url", "rating", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "12 Angry Men"], ["overview", "The defense and the prosecution have rested and the jury is filing into the jury room to decide if a young Spanish-American is guilty or innocent of murdering his father. What begins as an open and shut case soon becomes a mini-drama of each of the jurors' prejudices and preconceptions about the trial, the accused, and each other."], ["poster_url", "https://image.tmdb.org/t/p/original/tj6iPnz18hGfr0LKqWmG6Cp3niO.jpg"], ["rating", 8.5], ["created_at", "2023-05-26 10:20:52.185909"], ["updated_at", "2023-05-26 10:20:52.185909"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Your Name."], ["LIMIT", 1]]
+  [1m[36mMovie Create (0.2ms)[0m  [1m[32mINSERT INTO "movies" ("title", "overview", "poster_url", "rating", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Your Name."], ["overview", "High schoolers Mitsuha and Taki are complete strangers living separate lives. But one night, they suddenly switch places. Mitsuha wakes up in Taki’s body, and he in hers. This bizarre occurrence continues to happen randomly, and the two must adjust their lives around each other."], ["poster_url", "https://image.tmdb.org/t/p/original/dIWwZW7dJJtqC6CgWzYkNVKIUm8.jpg"], ["rating", 8.5], ["created_at", "2023-05-26 10:20:52.190472"], ["updated_at", "2023-05-26 10:20:52.190472"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Parasite"], ["LIMIT", 1]]
+  [1m[36mMovie Create (0.2ms)[0m  [1m[32mINSERT INTO "movies" ("title", "overview", "poster_url", "rating", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Parasite"], ["overview", "All unemployed, Ki-taek's family takes peculiar interest in the wealthy and glamorous Parks for their livelihood until they get entangled in an unexpected incident."], ["poster_url", "https://image.tmdb.org/t/p/original/ApiBzeaa95TNYliSbQ8pJv4Fje7.jpg"], ["rating", 8.5], ["created_at", "2023-05-26 10:20:52.194640"], ["updated_at", "2023-05-26 10:20:52.194640"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "The Dark Knight"], ["LIMIT", 1]]
+  [1m[36mMovie Create (0.2ms)[0m  [1m[32mINSERT INTO "movies" ("title", "overview", "poster_url", "rating", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "The Dark Knight"], ["overview", "Batman raises the stakes in his war on crime. With the help of Lt. Jim Gordon and District Attorney Harvey Dent, Batman sets out to dismantle the remaining criminal organizations that plague the streets. The partnership proves to be effective, but they soon find themselves prey to a reign of chaos unleashed by a rising criminal mastermind known to the terrified citizens of Gotham as the Joker."], ["poster_url", "https://image.tmdb.org/t/p/original/dqK9Hag1054tghRQSqLSfrkvQnA.jpg"], ["rating", 8.5], ["created_at", "2023-05-26 10:20:52.199216"], ["updated_at", "2023-05-26 10:20:52.199216"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "The Green Mile"], ["LIMIT", 1]]
+  [1m[36mMovie Create (0.2ms)[0m  [1m[32mINSERT INTO "movies" ("title", "overview", "poster_url", "rating", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "The Green Mile"], ["overview", "A supernatural tale set on death row in a Southern prison, where gentle giant John Coffey possesses the mysterious power to heal people's ailments. When the cell block's head guard, Paul Edgecomb, recognizes Coffey's miraculous gift, he tries desperately to help stave off the condemned man's execution."], ["poster_url", "https://image.tmdb.org/t/p/original/l6hQWH9eDksNJNiXWYRkWqikOdu.jpg"], ["rating", 8.5], ["created_at", "2023-05-26 10:20:52.204141"], ["updated_at", "2023-05-26 10:20:52.204141"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Pulp Fiction"], ["LIMIT", 1]]
+  [1m[36mMovie Create (0.2ms)[0m  [1m[32mINSERT INTO "movies" ("title", "overview", "poster_url", "rating", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Pulp Fiction"], ["overview", "A burger-loving hit man, his philosophical partner, a drug-addled gangster's moll and a washed-up boxer converge in this sprawling, comedic crime caper. Their adventures unfurl in three stories that ingeniously trip back and forth in time."], ["poster_url", "https://image.tmdb.org/t/p/original/suaEOtk1N1sgg2MTM7oZd2cfVp3.jpg"], ["rating", 8.5], ["created_at", "2023-05-26 10:20:52.210326"], ["updated_at", "2023-05-26 10:20:52.210326"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "The Good, the Bad and the Ugly"], ["LIMIT", 1]]
+  [1m[36mMovie Create (0.2ms)[0m  [1m[32mINSERT INTO "movies" ("title", "overview", "poster_url", "rating", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "The Good, the Bad and the Ugly"], ["overview", "While the Civil War rages on between the Union and the Confederacy, three men – a quiet loner, a ruthless hitman, and a Mexican bandit – comb the American Southwest in search of a strongbox containing $200,000 in stolen gold."], ["poster_url", "https://image.tmdb.org/t/p/original/eoCSp75lxatmIa6aGqfnzwtbttd.jpg"], ["rating", 8.5], ["created_at", "2023-05-26 10:20:52.214734"], ["updated_at", "2023-05-26 10:20:52.214734"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Forrest Gump"], ["LIMIT", 1]]
+  [1m[36mMovie Create (0.2ms)[0m  [1m[32mINSERT INTO "movies" ("title", "overview", "poster_url", "rating", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Forrest Gump"], ["overview", "A man with a low IQ has accomplished great things in his life and been present during significant historic events—in each case, far exceeding what anyone imagined he could do. But despite all he has achieved, his one true love eludes him."], ["poster_url", "https://image.tmdb.org/t/p/original/3h1JZGDhZ8nzxdgvkxha0qBqi05.jpg"], ["rating", 8.5], ["created_at", "2023-05-26 10:20:52.219283"], ["updated_at", "2023-05-26 10:20:52.219283"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "The Lord of the Rings: The Return of the King"], ["LIMIT", 1]]
+  [1m[36mMovie Create (0.2ms)[0m  [1m[32mINSERT INTO "movies" ("title", "overview", "poster_url", "rating", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "The Lord of the Rings: The Return of the King"], ["overview", "Aragorn is revealed as the heir to the ancient kings as he, Gandalf and the other members of the broken fellowship struggle to save Gondor from Sauron's forces. Meanwhile, Frodo and Sam take the ring closer to the heart of Mordor, the dark lord's realm."], ["poster_url", "https://image.tmdb.org/t/p/original/2u7zbn8EudG6kLlBzUYqP8RyFU4.jpg"], ["rating", 8.5], ["created_at", "2023-05-26 10:20:52.223794"], ["updated_at", "2023-05-26 10:20:52.223794"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "The Boy, the Mole, the Fox and the Horse"], ["LIMIT", 1]]
+  [1m[36mMovie Create (0.2ms)[0m  [1m[32mINSERT INTO "movies" ("title", "overview", "poster_url", "rating", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "The Boy, the Mole, the Fox and the Horse"], ["overview", "The unlikely friendship of a boy, a mole, a fox and a horse traveling together in the boy’s search for home."], ["poster_url", "https://image.tmdb.org/t/p/original/wxaBkuqVIgImjRHEMJoxL9Lq6i8.jpg"], ["rating", 8.5], ["created_at", "2023-05-26 10:20:52.228402"], ["updated_at", "2023-05-26 10:20:52.228402"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "GoodFellas"], ["LIMIT", 1]]
+  [1m[36mMovie Create (0.3ms)[0m  [1m[32mINSERT INTO "movies" ("title", "overview", "poster_url", "rating", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "GoodFellas"], ["overview", "The true story of Henry Hill, a half-Irish, half-Sicilian Brooklyn kid who is adopted by neighbourhood gangsters at an early age and climbs the ranks of a Mafia family under the guidance of Jimmy Conway."], ["poster_url", "https://image.tmdb.org/t/p/original/sw7mordbZxgITU877yTpZCud90M.jpg"], ["rating", 8.5], ["created_at", "2023-05-26 10:20:52.233260"], ["updated_at", "2023-05-26 10:20:52.233260"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Dou kyu sei – Classmates"], ["LIMIT", 1]]
+  [1m[36mMovie Create (0.2ms)[0m  [1m[32mINSERT INTO "movies" ("title", "overview", "poster_url", "rating", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Dou kyu sei – Classmates"], ["overview", "Rihito Sajo, an honor student with a perfect score on the entrance exam and Hikaru Kusakabe, in a band and popular among girls, would have never crossed paths. Until one day they started talking at the practice for their school’s upcoming chorus festival. After school, the two meet regularly, as Hikaru helps Rihito to improve his singing skills. While they listen to each other’s voice and harmonize, their hearts start to beat together."], ["poster_url", "https://image.tmdb.org/t/p/original/3RMLbSEXOn1CzLoNT7xFeLfdxhq.jpg"], ["rating", 8.5], ["created_at", "2023-05-26 10:20:52.237876"], ["updated_at", "2023-05-26 10:20:52.237876"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Primal: Tales of Savagery"], ["LIMIT", 1]]
+  [1m[36mMovie Create (0.6ms)[0m  [1m[32mINSERT INTO "movies" ("title", "overview", "poster_url", "rating", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Primal: Tales of Savagery"], ["overview", "Genndy Tartakovsky's Primal: Tales of Savagery features a caveman and a dinosaur on the brink of extinction. Bonded by tragedy, this unlikely friendship becomes the only hope of survival."], ["poster_url", "https://image.tmdb.org/t/p/original/uBZQOYZLIU9dBmd62fdzBAoropu.jpg"], ["rating", 8.5], ["created_at", "2023-05-26 10:20:52.242653"], ["updated_at", "2023-05-26 10:20:52.242653"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "The Godfather"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "The Shawshank Redemption"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "The Godfather Part II"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Dilwale Dulhania Le Jayenge"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Schindler's List"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Cuando Sea Joven"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Spirited Away"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "12 Angry Men"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Your Name."], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Parasite"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "The Dark Knight"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "The Green Mile"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Pulp Fiction"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "The Good, the Bad and the Ugly"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Forrest Gump"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "The Lord of the Rings: The Return of the King"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "The Boy, the Mole, the Fox and the Horse"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "GoodFellas"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Dou kyu sei – Classmates"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Primal: Tales of Savagery"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "The Godfather"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "The Shawshank Redemption"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "The Godfather Part II"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Dilwale Dulhania Le Jayenge"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Schindler's List"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Cuando Sea Joven"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Spirited Away"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "12 Angry Men"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Your Name."], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Parasite"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "The Dark Knight"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "The Green Mile"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Pulp Fiction"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "The Good, the Bad and the Ugly"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Forrest Gump"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "The Lord of the Rings: The Return of the King"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "The Boy, the Mole, the Fox and the Horse"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "GoodFellas"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Dou kyu sei – Classmates"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Primal: Tales of Savagery"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "The Godfather"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "The Shawshank Redemption"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "The Godfather Part II"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Dilwale Dulhania Le Jayenge"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Schindler's List"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Cuando Sea Joven"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Spirited Away"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "12 Angry Men"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Your Name."], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Parasite"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "The Dark Knight"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "The Green Mile"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Pulp Fiction"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "The Good, the Bad and the Ugly"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Forrest Gump"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "The Lord of the Rings: The Return of the King"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "The Boy, the Mole, the Fox and the Horse"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "GoodFellas"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Dou kyu sei – Classmates"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Primal: Tales of Savagery"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "The Godfather"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "The Shawshank Redemption"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "The Godfather Part II"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Dilwale Dulhania Le Jayenge"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Schindler's List"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Cuando Sea Joven"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Spirited Away"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "12 Angry Men"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Your Name."], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Parasite"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "The Dark Knight"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "The Green Mile"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Pulp Fiction"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "The Good, the Bad and the Ugly"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Forrest Gump"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "The Lord of the Rings: The Return of the King"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "The Boy, the Mole, the Fox and the Horse"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "GoodFellas"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Dou kyu sei – Classmates"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Primal: Tales of Savagery"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "The Godfather"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "The Shawshank Redemption"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "The Godfather Part II"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Dilwale Dulhania Le Jayenge"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Schindler's List"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Cuando Sea Joven"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Spirited Away"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "12 Angry Men"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Your Name."], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Parasite"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "The Dark Knight"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "The Green Mile"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Pulp Fiction"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "The Good, the Bad and the Ugly"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Forrest Gump"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "The Lord of the Rings: The Return of the King"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "The Boy, the Mole, the Fox and the Horse"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "GoodFellas"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Dou kyu sei – Classmates"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Primal: Tales of Savagery"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "The Godfather"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "The Shawshank Redemption"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "The Godfather Part II"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Dilwale Dulhania Le Jayenge"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Schindler's List"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Cuando Sea Joven"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Spirited Away"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "12 Angry Men"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Your Name."], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Parasite"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "The Dark Knight"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "The Green Mile"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Pulp Fiction"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "The Good, the Bad and the Ugly"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Forrest Gump"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "The Lord of the Rings: The Return of the King"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "The Boy, the Mole, the Fox and the Horse"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "GoodFellas"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Dou kyu sei – Classmates"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Primal: Tales of Savagery"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "The Godfather"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "The Shawshank Redemption"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "The Godfather Part II"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Dilwale Dulhania Le Jayenge"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Schindler's List"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Cuando Sea Joven"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Spirited Away"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "12 Angry Men"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Your Name."], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Parasite"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "The Dark Knight"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "The Green Mile"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Pulp Fiction"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "The Good, the Bad and the Ugly"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Forrest Gump"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "The Lord of the Rings: The Return of the King"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "The Boy, the Mole, the Fox and the Horse"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "GoodFellas"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Dou kyu sei – Classmates"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Primal: Tales of Savagery"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "The Godfather"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "The Shawshank Redemption"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "The Godfather Part II"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Dilwale Dulhania Le Jayenge"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Schindler's List"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Cuando Sea Joven"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Spirited Away"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "12 Angry Men"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Your Name."], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Parasite"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "The Dark Knight"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "The Green Mile"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Pulp Fiction"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "The Good, the Bad and the Ugly"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Forrest Gump"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "The Lord of the Rings: The Return of the King"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "The Boy, the Mole, the Fox and the Horse"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "GoodFellas"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Dou kyu sei – Classmates"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Primal: Tales of Savagery"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "The Godfather"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "The Shawshank Redemption"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "The Godfather Part II"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Dilwale Dulhania Le Jayenge"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Schindler's List"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Cuando Sea Joven"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Spirited Away"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "12 Angry Men"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Your Name."], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Parasite"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "The Dark Knight"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "The Green Mile"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Pulp Fiction"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "The Good, the Bad and the Ugly"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Forrest Gump"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "The Lord of the Rings: The Return of the King"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "The Boy, the Mole, the Fox and the Horse"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "GoodFellas"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Dou kyu sei – Classmates"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Primal: Tales of Savagery"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+Started GET "/" for ::1 at 2023-05-26 15:34:36 +0200
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ListsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (1.7ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  ↳ app/views/lists/index.html.erb:13
+  Rendered lists/index.html.erb within layouts/application (Duration: 20.9ms | Allocations: 1501)
+  Rendered shared/_navbar.html.erb (Duration: 2.6ms | Allocations: 943)
+  Rendered shared/_flashes.html.erb (Duration: 0.8ms | Allocations: 236)
+  Rendered layout layouts/application.html.erb (Duration: 174.8ms | Allocations: 53766)
+Completed 200 OK in 214ms (Views: 183.9ms | ActiveRecord: 1.7ms | Allocations: 59840)
+
+
+Started GET "/lists/new" for ::1 at 2023-05-26 15:34:39 +0200
+Processing by ListsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering lists/new.html.erb within layouts/application
+  Rendered lists/new.html.erb within layouts/application (Duration: 48.1ms | Allocations: 16019)
+  Rendered shared/_navbar.html.erb (Duration: 0.8ms | Allocations: 657)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 37)
+  Rendered layout layouts/application.html.erb (Duration: 62.7ms | Allocations: 27474)
+Completed 200 OK in 72ms (Views: 63.2ms | ActiveRecord: 3.6ms | Allocations: 30483)
+
+
+Started POST "/lists" for ::1 at 2023-05-26 15:34:41 +0200
+Processing by ListsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "list"=>{"name"=>""}, "commit"=>"Create List"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/lists_controller.rb:19:in `create'
+  [1m[36mList Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "lists" WHERE "lists"."name" = $1 LIMIT $2[0m  [["name", ""], ["LIMIT", 1]]
+  ↳ app/controllers/lists_controller.rb:19:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/lists_controller.rb:19:in `create'
+  Rendering layout layouts/application.html.erb
+  Rendering lists/new.html.erb within layouts/application
+  Rendered lists/new.html.erb within layouts/application (Duration: 8.6ms | Allocations: 8534)
+  Rendered shared/_navbar.html.erb (Duration: 1.4ms | Allocations: 652)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 37)
+  Rendered layout layouts/application.html.erb (Duration: 24.3ms | Allocations: 19602)
+Completed 422 Unprocessable Entity in 31ms (Views: 24.8ms | ActiveRecord: 0.6ms | Allocations: 24986)
+
+
+Started GET "/" for ::1 at 2023-05-26 15:34:42 +0200
+Processing by ListsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (0.3ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  ↳ app/views/lists/index.html.erb:13
+  Rendered lists/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 664)
+  Rendered shared/_navbar.html.erb (Duration: 0.8ms | Allocations: 642)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 31)
+  Rendered layout layouts/application.html.erb (Duration: 18.4ms | Allocations: 12474)
+Completed 200 OK in 20ms (Views: 18.8ms | ActiveRecord: 0.3ms | Allocations: 12749)
+
+
+Started GET "/lists/new" for ::1 at 2023-05-26 15:34:44 +0200
+Processing by ListsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering lists/new.html.erb within layouts/application
+  Rendered lists/new.html.erb within layouts/application (Duration: 6.7ms | Allocations: 7548)
+  Rendered shared/_navbar.html.erb (Duration: 0.9ms | Allocations: 642)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 31)
+  Rendered layout layouts/application.html.erb (Duration: 21.8ms | Allocations: 18452)
+Completed 200 OK in 23ms (Views: 22.2ms | ActiveRecord: 0.0ms | Allocations: 18725)
+
+
+Started GET "/" for ::1 at 2023-05-26 15:34:46 +0200
+Processing by ListsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (0.3ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  ↳ app/views/lists/index.html.erb:13
+  Rendered lists/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 621)
+  Rendered shared/_navbar.html.erb (Duration: 1.1ms | Allocations: 642)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 31)
+  Rendered layout layouts/application.html.erb (Duration: 19.0ms | Allocations: 12005)
+Completed 200 OK in 21ms (Views: 19.6ms | ActiveRecord: 0.3ms | Allocations: 12263)
+
+
+  [1m[35m (1.1ms)[0m  [1m[35mCREATE DATABASE "rails-watch-list_development" ENCODING = 'unicode'[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE DATABASE "rails-watch-list_test" ENCODING = 'unicode'[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5664623546625577800)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(5664623546625577800)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mMovie Load (1.0ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Destroy (2.5ms)[0m  [1m[31mDELETE FROM "movies" WHERE "movies"."id" = $1[0m  [["id", 1]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Destroy (0.3ms)[0m  [1m[31mDELETE FROM "movies" WHERE "movies"."id" = $1[0m  [["id", 2]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Destroy (0.3ms)[0m  [1m[31mDELETE FROM "movies" WHERE "movies"."id" = $1[0m  [["id", 3]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Destroy (0.3ms)[0m  [1m[31mDELETE FROM "movies" WHERE "movies"."id" = $1[0m  [["id", 4]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Destroy (0.3ms)[0m  [1m[31mDELETE FROM "movies" WHERE "movies"."id" = $1[0m  [["id", 5]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Destroy (0.3ms)[0m  [1m[31mDELETE FROM "movies" WHERE "movies"."id" = $1[0m  [["id", 6]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Destroy (0.2ms)[0m  [1m[31mDELETE FROM "movies" WHERE "movies"."id" = $1[0m  [["id", 7]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Destroy (0.2ms)[0m  [1m[31mDELETE FROM "movies" WHERE "movies"."id" = $1[0m  [["id", 8]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Destroy (0.2ms)[0m  [1m[31mDELETE FROM "movies" WHERE "movies"."id" = $1[0m  [["id", 9]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Destroy (0.3ms)[0m  [1m[31mDELETE FROM "movies" WHERE "movies"."id" = $1[0m  [["id", 10]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Destroy (0.3ms)[0m  [1m[31mDELETE FROM "movies" WHERE "movies"."id" = $1[0m  [["id", 11]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Destroy (0.2ms)[0m  [1m[31mDELETE FROM "movies" WHERE "movies"."id" = $1[0m  [["id", 12]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Destroy (0.2ms)[0m  [1m[31mDELETE FROM "movies" WHERE "movies"."id" = $1[0m  [["id", 13]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Destroy (0.2ms)[0m  [1m[31mDELETE FROM "movies" WHERE "movies"."id" = $1[0m  [["id", 14]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Destroy (0.2ms)[0m  [1m[31mDELETE FROM "movies" WHERE "movies"."id" = $1[0m  [["id", 15]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Destroy (0.3ms)[0m  [1m[31mDELETE FROM "movies" WHERE "movies"."id" = $1[0m  [["id", 16]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Destroy (0.2ms)[0m  [1m[31mDELETE FROM "movies" WHERE "movies"."id" = $1[0m  [["id", 17]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Destroy (0.2ms)[0m  [1m[31mDELETE FROM "movies" WHERE "movies"."id" = $1[0m  [["id", 18]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Destroy (0.2ms)[0m  [1m[31mDELETE FROM "movies" WHERE "movies"."id" = $1[0m  [["id", 19]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Destroy (0.2ms)[0m  [1m[31mDELETE FROM "movies" WHERE "movies"."id" = $1[0m  [["id", 20]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "The Godfather"], ["LIMIT", 1]]
+  [1m[36mMovie Create (0.4ms)[0m  [1m[32mINSERT INTO "movies" ("title", "overview", "poster_url", "rating", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "The Godfather"], ["overview", "Spanning the years 1945 to 1955, a chronicle of the fictional Italian-American Corleone crime family. When organized crime family patriarch, Vito Corleone barely survives an attempt on his life, his youngest son, Michael steps in to take care of the would-be killers, launching a campaign of bloody revenge."], ["poster_url", "https://image.tmdb.org/t/p/original/tmU7GeKVybMWFButWEGl2M4GeiP.jpg"], ["rating", 8.7], ["created_at", "2023-05-26 13:36:42.125573"], ["updated_at", "2023-05-26 13:36:42.125573"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "The Shawshank Redemption"], ["LIMIT", 1]]
+  [1m[36mMovie Create (0.2ms)[0m  [1m[32mINSERT INTO "movies" ("title", "overview", "poster_url", "rating", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "The Shawshank Redemption"], ["overview", "Framed in the 1940s for the double murder of his wife and her lover, upstanding banker Andy Dufresne begins a new life at the Shawshank prison, where he puts his accounting skills to work for an amoral warden. During his long stretch in prison, Dufresne comes to be admired by the other inmates -- including an older prisoner named Red -- for his integrity and unquenchable sense of hope."], ["poster_url", "https://image.tmdb.org/t/p/original/kXfqcdQKsToO0OUXHcrrNCHDBzO.jpg"], ["rating", 8.7], ["created_at", "2023-05-26 13:36:42.131105"], ["updated_at", "2023-05-26 13:36:42.131105"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "The Godfather Part II"], ["LIMIT", 1]]
+  [1m[36mMovie Create (0.2ms)[0m  [1m[32mINSERT INTO "movies" ("title", "overview", "poster_url", "rating", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "The Godfather Part II"], ["overview", "In the continuing saga of the Corleone crime family, a young Vito Corleone grows up in Sicily and in 1910s New York. In the 1950s, Michael Corleone attempts to expand the family business into Las Vegas, Hollywood and Cuba."], ["poster_url", "https://image.tmdb.org/t/p/original/oo4PVK6AyLZN49BokxDFGyclN86.jpg"], ["rating", 8.6], ["created_at", "2023-05-26 13:36:42.135544"], ["updated_at", "2023-05-26 13:36:42.135544"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Dilwale Dulhania Le Jayenge"], ["LIMIT", 1]]
+  [1m[36mMovie Create (0.2ms)[0m  [1m[32mINSERT INTO "movies" ("title", "overview", "poster_url", "rating", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Dilwale Dulhania Le Jayenge"], ["overview", "Raj is a rich, carefree, happy-go-lucky second generation NRI. Simran is the daughter of Chaudhary Baldev Singh, who in spite of being an NRI is very strict about adherence to Indian values. Simran has left for India to be married to her childhood fiancé. Raj leaves for India with a mission at his hands, to claim his lady love under the noses of her whole family. Thus begins a saga."], ["poster_url", "https://image.tmdb.org/t/p/original/vI3aUGTuRRdM7J78KIdW98LdxE5.jpg"], ["rating", 8.6], ["created_at", "2023-05-26 13:36:42.140296"], ["updated_at", "2023-05-26 13:36:42.140296"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Schindler's List"], ["LIMIT", 1]]
+  [1m[36mMovie Create (0.2ms)[0m  [1m[32mINSERT INTO "movies" ("title", "overview", "poster_url", "rating", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Schindler's List"], ["overview", "The true story of how businessman Oskar Schindler saved over a thousand Jewish lives from the Nazis while they worked as slaves in his factory during World War II."], ["poster_url", "https://image.tmdb.org/t/p/original/zb6fM1CX41D9rF9hdgclu0peUmy.jpg"], ["rating", 8.6], ["created_at", "2023-05-26 13:36:42.144713"], ["updated_at", "2023-05-26 13:36:42.144713"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Cuando Sea Joven"], ["LIMIT", 1]]
+  [1m[36mMovie Create (0.2ms)[0m  [1m[32mINSERT INTO "movies" ("title", "overview", "poster_url", "rating", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Cuando Sea Joven"], ["overview", "70-year-old Malena gets a second chance at life when she magically turns into her 22-year-old self. Now, posing as \"Maria\" to hide her true identity, she becomes the lead singer of her grandson's band and tries to recover her dream of singing, which she had to give up at some point."], ["poster_url", "https://image.tmdb.org/t/p/original/ejnlCzBd5pOGAYCpxC93NXSrdrz.jpg"], ["rating", 8.5], ["created_at", "2023-05-26 13:36:42.149106"], ["updated_at", "2023-05-26 13:36:42.149106"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Spirited Away"], ["LIMIT", 1]]
+  [1m[36mMovie Create (0.2ms)[0m  [1m[32mINSERT INTO "movies" ("title", "overview", "poster_url", "rating", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Spirited Away"], ["overview", "A young girl, Chihiro, becomes trapped in a strange new world of spirits. When her parents undergo a mysterious transformation, she must call upon the courage she never knew she had to free her family."], ["poster_url", "https://image.tmdb.org/t/p/original/Ab8mkHmkYADjU7wQiOkia9BzGvS.jpg"], ["rating", 8.5], ["created_at", "2023-05-26 13:36:42.153226"], ["updated_at", "2023-05-26 13:36:42.153226"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "12 Angry Men"], ["LIMIT", 1]]
+  [1m[36mMovie Create (0.2ms)[0m  [1m[32mINSERT INTO "movies" ("title", "overview", "poster_url", "rating", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "12 Angry Men"], ["overview", "The defense and the prosecution have rested and the jury is filing into the jury room to decide if a young Spanish-American is guilty or innocent of murdering his father. What begins as an open and shut case soon becomes a mini-drama of each of the jurors' prejudices and preconceptions about the trial, the accused, and each other."], ["poster_url", "https://image.tmdb.org/t/p/original/tj6iPnz18hGfr0LKqWmG6Cp3niO.jpg"], ["rating", 8.5], ["created_at", "2023-05-26 13:36:42.157641"], ["updated_at", "2023-05-26 13:36:42.157641"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Your Name."], ["LIMIT", 1]]
+  [1m[36mMovie Create (0.2ms)[0m  [1m[32mINSERT INTO "movies" ("title", "overview", "poster_url", "rating", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Your Name."], ["overview", "High schoolers Mitsuha and Taki are complete strangers living separate lives. But one night, they suddenly switch places. Mitsuha wakes up in Taki’s body, and he in hers. This bizarre occurrence continues to happen randomly, and the two must adjust their lives around each other."], ["poster_url", "https://image.tmdb.org/t/p/original/dIWwZW7dJJtqC6CgWzYkNVKIUm8.jpg"], ["rating", 8.5], ["created_at", "2023-05-26 13:36:42.162551"], ["updated_at", "2023-05-26 13:36:42.162551"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Parasite"], ["LIMIT", 1]]
+  [1m[36mMovie Create (0.2ms)[0m  [1m[32mINSERT INTO "movies" ("title", "overview", "poster_url", "rating", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Parasite"], ["overview", "All unemployed, Ki-taek's family takes peculiar interest in the wealthy and glamorous Parks for their livelihood until they get entangled in an unexpected incident."], ["poster_url", "https://image.tmdb.org/t/p/original/ApiBzeaa95TNYliSbQ8pJv4Fje7.jpg"], ["rating", 8.5], ["created_at", "2023-05-26 13:36:42.167044"], ["updated_at", "2023-05-26 13:36:42.167044"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "The Dark Knight"], ["LIMIT", 1]]
+  [1m[36mMovie Create (0.2ms)[0m  [1m[32mINSERT INTO "movies" ("title", "overview", "poster_url", "rating", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "The Dark Knight"], ["overview", "Batman raises the stakes in his war on crime. With the help of Lt. Jim Gordon and District Attorney Harvey Dent, Batman sets out to dismantle the remaining criminal organizations that plague the streets. The partnership proves to be effective, but they soon find themselves prey to a reign of chaos unleashed by a rising criminal mastermind known to the terrified citizens of Gotham as the Joker."], ["poster_url", "https://image.tmdb.org/t/p/original/dqK9Hag1054tghRQSqLSfrkvQnA.jpg"], ["rating", 8.5], ["created_at", "2023-05-26 13:36:42.171424"], ["updated_at", "2023-05-26 13:36:42.171424"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "The Green Mile"], ["LIMIT", 1]]
+  [1m[36mMovie Create (0.2ms)[0m  [1m[32mINSERT INTO "movies" ("title", "overview", "poster_url", "rating", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "The Green Mile"], ["overview", "A supernatural tale set on death row in a Southern prison, where gentle giant John Coffey possesses the mysterious power to heal people's ailments. When the cell block's head guard, Paul Edgecomb, recognizes Coffey's miraculous gift, he tries desperately to help stave off the condemned man's execution."], ["poster_url", "https://image.tmdb.org/t/p/original/l6hQWH9eDksNJNiXWYRkWqikOdu.jpg"], ["rating", 8.5], ["created_at", "2023-05-26 13:36:42.176038"], ["updated_at", "2023-05-26 13:36:42.176038"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Pulp Fiction"], ["LIMIT", 1]]
+  [1m[36mMovie Create (0.2ms)[0m  [1m[32mINSERT INTO "movies" ("title", "overview", "poster_url", "rating", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Pulp Fiction"], ["overview", "A burger-loving hit man, his philosophical partner, a drug-addled gangster's moll and a washed-up boxer converge in this sprawling, comedic crime caper. Their adventures unfurl in three stories that ingeniously trip back and forth in time."], ["poster_url", "https://image.tmdb.org/t/p/original/suaEOtk1N1sgg2MTM7oZd2cfVp3.jpg"], ["rating", 8.5], ["created_at", "2023-05-26 13:36:42.180476"], ["updated_at", "2023-05-26 13:36:42.180476"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "The Good, the Bad and the Ugly"], ["LIMIT", 1]]
+  [1m[36mMovie Create (0.2ms)[0m  [1m[32mINSERT INTO "movies" ("title", "overview", "poster_url", "rating", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "The Good, the Bad and the Ugly"], ["overview", "While the Civil War rages on between the Union and the Confederacy, three men – a quiet loner, a ruthless hitman, and a Mexican bandit – comb the American Southwest in search of a strongbox containing $200,000 in stolen gold."], ["poster_url", "https://image.tmdb.org/t/p/original/eoCSp75lxatmIa6aGqfnzwtbttd.jpg"], ["rating", 8.5], ["created_at", "2023-05-26 13:36:42.185074"], ["updated_at", "2023-05-26 13:36:42.185074"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Forrest Gump"], ["LIMIT", 1]]
+  [1m[36mMovie Create (0.2ms)[0m  [1m[32mINSERT INTO "movies" ("title", "overview", "poster_url", "rating", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Forrest Gump"], ["overview", "A man with a low IQ has accomplished great things in his life and been present during significant historic events—in each case, far exceeding what anyone imagined he could do. But despite all he has achieved, his one true love eludes him."], ["poster_url", "https://image.tmdb.org/t/p/original/3h1JZGDhZ8nzxdgvkxha0qBqi05.jpg"], ["rating", 8.5], ["created_at", "2023-05-26 13:36:42.189368"], ["updated_at", "2023-05-26 13:36:42.189368"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "The Lord of the Rings: The Return of the King"], ["LIMIT", 1]]
+  [1m[36mMovie Create (0.2ms)[0m  [1m[32mINSERT INTO "movies" ("title", "overview", "poster_url", "rating", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "The Lord of the Rings: The Return of the King"], ["overview", "Aragorn is revealed as the heir to the ancient kings as he, Gandalf and the other members of the broken fellowship struggle to save Gondor from Sauron's forces. Meanwhile, Frodo and Sam take the ring closer to the heart of Mordor, the dark lord's realm."], ["poster_url", "https://image.tmdb.org/t/p/original/2u7zbn8EudG6kLlBzUYqP8RyFU4.jpg"], ["rating", 8.5], ["created_at", "2023-05-26 13:36:42.193743"], ["updated_at", "2023-05-26 13:36:42.193743"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "The Boy, the Mole, the Fox and the Horse"], ["LIMIT", 1]]
+  [1m[36mMovie Create (0.2ms)[0m  [1m[32mINSERT INTO "movies" ("title", "overview", "poster_url", "rating", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "The Boy, the Mole, the Fox and the Horse"], ["overview", "The unlikely friendship of a boy, a mole, a fox and a horse traveling together in the boy’s search for home."], ["poster_url", "https://image.tmdb.org/t/p/original/wxaBkuqVIgImjRHEMJoxL9Lq6i8.jpg"], ["rating", 8.5], ["created_at", "2023-05-26 13:36:42.197996"], ["updated_at", "2023-05-26 13:36:42.197996"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "GoodFellas"], ["LIMIT", 1]]
+  [1m[36mMovie Create (0.2ms)[0m  [1m[32mINSERT INTO "movies" ("title", "overview", "poster_url", "rating", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "GoodFellas"], ["overview", "The true story of Henry Hill, a half-Irish, half-Sicilian Brooklyn kid who is adopted by neighbourhood gangsters at an early age and climbs the ranks of a Mafia family under the guidance of Jimmy Conway."], ["poster_url", "https://image.tmdb.org/t/p/original/sw7mordbZxgITU877yTpZCud90M.jpg"], ["rating", 8.5], ["created_at", "2023-05-26 13:36:42.202095"], ["updated_at", "2023-05-26 13:36:42.202095"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Dou kyu sei – Classmates"], ["LIMIT", 1]]
+  [1m[36mMovie Create (0.2ms)[0m  [1m[32mINSERT INTO "movies" ("title", "overview", "poster_url", "rating", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Dou kyu sei – Classmates"], ["overview", "Rihito Sajo, an honor student with a perfect score on the entrance exam and Hikaru Kusakabe, in a band and popular among girls, would have never crossed paths. Until one day they started talking at the practice for their school’s upcoming chorus festival. After school, the two meet regularly, as Hikaru helps Rihito to improve his singing skills. While they listen to each other’s voice and harmonize, their hearts start to beat together."], ["poster_url", "https://image.tmdb.org/t/p/original/3RMLbSEXOn1CzLoNT7xFeLfdxhq.jpg"], ["rating", 8.5], ["created_at", "2023-05-26 13:36:42.206006"], ["updated_at", "2023-05-26 13:36:42.206006"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Primal: Tales of Savagery"], ["LIMIT", 1]]
+  [1m[36mMovie Create (0.3ms)[0m  [1m[32mINSERT INTO "movies" ("title", "overview", "poster_url", "rating", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Primal: Tales of Savagery"], ["overview", "Genndy Tartakovsky's Primal: Tales of Savagery features a caveman and a dinosaur on the brink of extinction. Bonded by tragedy, this unlikely friendship becomes the only hope of survival."], ["poster_url", "https://image.tmdb.org/t/p/original/uBZQOYZLIU9dBmd62fdzBAoropu.jpg"], ["rating", 8.5], ["created_at", "2023-05-26 13:36:42.209930"], ["updated_at", "2023-05-26 13:36:42.209930"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "The Godfather"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "The Shawshank Redemption"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "The Godfather Part II"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Dilwale Dulhania Le Jayenge"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Schindler's List"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Cuando Sea Joven"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Spirited Away"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "12 Angry Men"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Your Name."], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Parasite"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "The Dark Knight"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "The Green Mile"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Pulp Fiction"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "The Good, the Bad and the Ugly"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Forrest Gump"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "The Lord of the Rings: The Return of the King"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "The Boy, the Mole, the Fox and the Horse"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "GoodFellas"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Dou kyu sei – Classmates"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Primal: Tales of Savagery"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "The Godfather"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "The Shawshank Redemption"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "The Godfather Part II"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Dilwale Dulhania Le Jayenge"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Schindler's List"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Cuando Sea Joven"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Spirited Away"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "12 Angry Men"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Your Name."], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Parasite"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "The Dark Knight"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "The Green Mile"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Pulp Fiction"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "The Good, the Bad and the Ugly"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Forrest Gump"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "The Lord of the Rings: The Return of the King"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "The Boy, the Mole, the Fox and the Horse"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "GoodFellas"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Dou kyu sei – Classmates"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Primal: Tales of Savagery"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "The Godfather"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "The Shawshank Redemption"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "The Godfather Part II"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Dilwale Dulhania Le Jayenge"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Schindler's List"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Cuando Sea Joven"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Spirited Away"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "12 Angry Men"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Your Name."], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Parasite"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "The Dark Knight"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "The Green Mile"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Pulp Fiction"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "The Good, the Bad and the Ugly"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Forrest Gump"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "The Lord of the Rings: The Return of the King"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "The Boy, the Mole, the Fox and the Horse"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "GoodFellas"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Dou kyu sei – Classmates"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Primal: Tales of Savagery"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "The Godfather"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "The Shawshank Redemption"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "The Godfather Part II"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Dilwale Dulhania Le Jayenge"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Schindler's List"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Cuando Sea Joven"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Spirited Away"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "12 Angry Men"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Your Name."], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Parasite"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "The Dark Knight"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "The Green Mile"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Pulp Fiction"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "The Good, the Bad and the Ugly"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Forrest Gump"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "The Lord of the Rings: The Return of the King"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "The Boy, the Mole, the Fox and the Horse"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "GoodFellas"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Dou kyu sei – Classmates"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Primal: Tales of Savagery"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "The Godfather"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "The Shawshank Redemption"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "The Godfather Part II"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Dilwale Dulhania Le Jayenge"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Schindler's List"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Cuando Sea Joven"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Spirited Away"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "12 Angry Men"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Your Name."], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Parasite"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "The Dark Knight"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "The Green Mile"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Pulp Fiction"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "The Good, the Bad and the Ugly"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Forrest Gump"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "The Lord of the Rings: The Return of the King"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "The Boy, the Mole, the Fox and the Horse"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "GoodFellas"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Dou kyu sei – Classmates"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Primal: Tales of Savagery"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "The Godfather"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "The Shawshank Redemption"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "The Godfather Part II"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Dilwale Dulhania Le Jayenge"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Schindler's List"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Cuando Sea Joven"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Spirited Away"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "12 Angry Men"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Your Name."], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Parasite"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "The Dark Knight"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "The Green Mile"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Pulp Fiction"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "The Good, the Bad and the Ugly"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Forrest Gump"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "The Lord of the Rings: The Return of the King"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "The Boy, the Mole, the Fox and the Horse"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "GoodFellas"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Dou kyu sei – Classmates"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Primal: Tales of Savagery"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "The Godfather"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "The Shawshank Redemption"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "The Godfather Part II"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Dilwale Dulhania Le Jayenge"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Schindler's List"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Cuando Sea Joven"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Spirited Away"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "12 Angry Men"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Your Name."], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Parasite"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "The Dark Knight"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "The Green Mile"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Pulp Fiction"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "The Good, the Bad and the Ugly"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Forrest Gump"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "The Lord of the Rings: The Return of the King"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "The Boy, the Mole, the Fox and the Horse"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "GoodFellas"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Dou kyu sei – Classmates"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Primal: Tales of Savagery"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "The Godfather"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "The Shawshank Redemption"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "The Godfather Part II"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Dilwale Dulhania Le Jayenge"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Schindler's List"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Cuando Sea Joven"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Spirited Away"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "12 Angry Men"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Your Name."], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Parasite"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "The Dark Knight"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "The Green Mile"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Pulp Fiction"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "The Good, the Bad and the Ugly"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Forrest Gump"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "The Lord of the Rings: The Return of the King"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "The Boy, the Mole, the Fox and the Horse"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "GoodFellas"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Dou kyu sei – Classmates"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Primal: Tales of Savagery"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "The Godfather"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "The Shawshank Redemption"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "The Godfather Part II"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Dilwale Dulhania Le Jayenge"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Schindler's List"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Cuando Sea Joven"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Spirited Away"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "12 Angry Men"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Your Name."], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Parasite"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "The Dark Knight"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "The Green Mile"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Pulp Fiction"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "The Good, the Bad and the Ugly"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Forrest Gump"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "The Lord of the Rings: The Return of the King"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "The Boy, the Mole, the Fox and the Horse"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "GoodFellas"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Dou kyu sei – Classmates"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" WHERE "movies"."title" = $1 LIMIT $2[0m  [["title", "Primal: Tales of Savagery"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+Started GET "/" for ::1 at 2023-05-26 15:36:55 +0200
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ListsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (0.5ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  ↳ app/views/lists/index.html.erb:13
+  Rendered lists/index.html.erb within layouts/application (Duration: 18.2ms | Allocations: 1501)
+  Rendered shared/_navbar.html.erb (Duration: 1.7ms | Allocations: 943)
+  Rendered shared/_flashes.html.erb (Duration: 0.4ms | Allocations: 236)
+  Rendered layout layouts/application.html.erb (Duration: 147.0ms | Allocations: 53940)
+Completed 200 OK in 182ms (Views: 157.2ms | ActiveRecord: 0.5ms | Allocations: 60014)
+
+
+Started GET "/" for ::1 at 2023-05-26 15:36:57 +0200
+Processing by ListsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (0.2ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  ↳ app/views/lists/index.html.erb:13
+  Rendered lists/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 723)
+  Rendered shared/_navbar.html.erb (Duration: 0.8ms | Allocations: 650)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 37)
+  Rendered layout layouts/application.html.erb (Duration: 16.1ms | Allocations: 12252)
+Completed 200 OK in 17ms (Views: 16.5ms | ActiveRecord: 0.2ms | Allocations: 12583)
+
+
+Started GET "/lists/new" for ::1 at 2023-05-26 15:36:59 +0200
+Processing by ListsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering lists/new.html.erb within layouts/application
+  Rendered lists/new.html.erb within layouts/application (Duration: 35.7ms | Allocations: 16029)
+  Rendered shared/_navbar.html.erb (Duration: 1.0ms | Allocations: 657)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 37)
+  Rendered layout layouts/application.html.erb (Duration: 50.2ms | Allocations: 27094)
+Completed 200 OK in 59ms (Views: 50.7ms | ActiveRecord: 3.5ms | Allocations: 30078)
+
+
+Started POST "/lists" for ::1 at 2023-05-26 15:37:01 +0200
+Processing by ListsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "list"=>{"name"=>"Bonjour"}, "commit"=>"Create List"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/lists_controller.rb:19:in `create'
+  [1m[36mList Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "lists" WHERE "lists"."name" = $1 LIMIT $2[0m  [["name", "Bonjour"], ["LIMIT", 1]]
+  ↳ app/controllers/lists_controller.rb:19:in `create'
+  [1m[36mList Create (0.6ms)[0m  [1m[32mINSERT INTO "lists" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Bonjour"], ["created_at", "2023-05-26 13:37:01.571737"], ["updated_at", "2023-05-26 13:37:01.571737"]]
+  ↳ app/controllers/lists_controller.rb:19:in `create'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/lists_controller.rb:19:in `create'
+Redirected to http://localhost:3000/lists/1
+Completed 302 Found in 9ms (ActiveRecord: 1.4ms | Allocations: 6449)
+
+
+Started GET "/lists/1" for ::1 at 2023-05-26 15:37:01 +0200
+Processing by ListsController#show as TURBO_STREAM
+  Parameters: {"id"=>"1"}
+  [1m[36mList Load (0.3ms)[0m  [1m[34mSELECT "lists".* FROM "lists" WHERE "lists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/lists_controller.rb:34:in `set_list'
+  Rendering layout layouts/application.html.erb
+  Rendering lists/show.html.erb within layouts/application
+  [1m[36mMovie Count (1.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "movies" INNER JOIN "bookmarks" ON "movies"."id" = "bookmarks"."movie_id" WHERE "bookmarks"."list_id" = $1[0m  [["list_id", 1]]
+  ↳ app/views/lists/show.html.erb:5
+  [1m[36mReview Exists? (1.4ms)[0m  [1m[34mSELECT 1 AS one FROM "reviews" WHERE "reviews"."list_id" = $1 LIMIT $2[0m  [["list_id", 1], ["LIMIT", 1]]
+  ↳ app/views/lists/show.html.erb:41
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."list_id" = $1[0m  [["list_id", 1]]
+  ↳ app/views/lists/show.html.erb:44
+  [1m[36mMovie Load (1.0ms)[0m  [1m[34mSELECT "movies".* FROM "movies" ORDER BY "movies"."title" ASC[0m
+  ↳ app/views/bookmarks/_modal.html.erb:12
+  Rendered bookmarks/_modal.html.erb (Duration: 18.3ms | Allocations: 17809)
+  Rendered lists/show.html.erb within layouts/application (Duration: 78.1ms | Allocations: 47731)
+  Rendered shared/_navbar.html.erb (Duration: 0.9ms | Allocations: 650)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 37)
+  Rendered layout layouts/application.html.erb (Duration: 93.6ms | Allocations: 58595)
+Completed 200 OK in 128ms (Views: 87.6ms | ActiveRecord: 12.5ms | Allocations: 69208)
+
+
+Started POST "/lists/1/bookmarks" for ::1 at 2023-05-26 15:37:07 +0200
+Processing by BookmarksController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "bookmark"=>{"movie_id"=>"34", "comment"=>""}, "commit"=>"Add movie", "list_id"=>"1"}
+  [1m[36mList Load (0.2ms)[0m  [1m[34mSELECT "lists".* FROM "lists" WHERE "lists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/bookmarks_controller.rb:35:in `set_list'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/bookmarks_controller.rb:12:in `create'
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 34], ["LIMIT", 1]]
+  ↳ app/controllers/bookmarks_controller.rb:12:in `create'
+  [1m[36mBookmark Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "bookmarks" WHERE "bookmarks"."movie_id" = $1 AND "bookmarks"."list_id" = $2 LIMIT $3[0m  [["movie_id", 34], ["list_id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/bookmarks_controller.rb:12:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/bookmarks_controller.rb:12:in `create'
+  Rendering layout layouts/application.html.erb
+  Rendering bookmarks/new.html.erb within layouts/application
+  [1m[36mMovie Load (0.3ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/views/bookmarks/new.html.erb:8
+  Rendered bookmarks/new.html.erb within layouts/application (Duration: 17.3ms | Allocations: 16885)
+  Rendered shared/_navbar.html.erb (Duration: 0.9ms | Allocations: 673)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 42)
+  Rendered layout layouts/application.html.erb (Duration: 32.9ms | Allocations: 27990)
+Completed 200 OK in 43ms (Views: 34.1ms | ActiveRecord: 1.2ms | Allocations: 34803)
+
+
+Started POST "/lists/1/bookmarks" for ::1 at 2023-05-26 15:37:09 +0200
+Processing by BookmarksController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "bookmark"=>{"movie_id"=>"34", "comment"=>""}, "commit"=>"Add movie", "list_id"=>"1"}
+  [1m[36mList Load (0.2ms)[0m  [1m[34mSELECT "lists".* FROM "lists" WHERE "lists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/bookmarks_controller.rb:35:in `set_list'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/bookmarks_controller.rb:12:in `create'
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 34], ["LIMIT", 1]]
+  ↳ app/controllers/bookmarks_controller.rb:12:in `create'
+  [1m[36mBookmark Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "bookmarks" WHERE "bookmarks"."movie_id" = $1 AND "bookmarks"."list_id" = $2 LIMIT $3[0m  [["movie_id", 34], ["list_id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/bookmarks_controller.rb:12:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/bookmarks_controller.rb:12:in `create'
+  Rendering layout layouts/application.html.erb
+  Rendering bookmarks/new.html.erb within layouts/application
+  [1m[36mMovie Load (0.3ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/views/bookmarks/new.html.erb:8
+  Rendered bookmarks/new.html.erb within layouts/application (Duration: 22.7ms | Allocations: 16084)
+  Rendered shared/_navbar.html.erb (Duration: 1.0ms | Allocations: 646)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 31)
+  Rendered layout layouts/application.html.erb (Duration: 37.7ms | Allocations: 26995)
+Completed 200 OK in 45ms (Views: 37.8ms | ActiveRecord: 1.1ms | Allocations: 31791)
+
+
+Started POST "/lists/1/bookmarks" for ::1 at 2023-05-26 15:37:13 +0200
+Processing by BookmarksController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "bookmark"=>{"movie_id"=>"21", "comment"=>"aezae"}, "commit"=>"Add movie", "list_id"=>"1"}
+  [1m[36mList Load (0.2ms)[0m  [1m[34mSELECT "lists".* FROM "lists" WHERE "lists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/bookmarks_controller.rb:35:in `set_list'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/bookmarks_controller.rb:12:in `create'
+  [1m[36mMovie Load (0.3ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/controllers/bookmarks_controller.rb:12:in `create'
+  [1m[36mBookmark Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "bookmarks" WHERE "bookmarks"."movie_id" = $1 AND "bookmarks"."list_id" = $2 LIMIT $3[0m  [["movie_id", 21], ["list_id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/bookmarks_controller.rb:12:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/bookmarks_controller.rb:12:in `create'
+  Rendering layout layouts/application.html.erb
+  Rendering bookmarks/new.html.erb within layouts/application
+  [1m[36mMovie Load (0.3ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/views/bookmarks/new.html.erb:8
+  Rendered bookmarks/new.html.erb within layouts/application (Duration: 15.7ms | Allocations: 16082)
+  Rendered shared/_navbar.html.erb (Duration: 1.2ms | Allocations: 646)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 31)
+  Rendered layout layouts/application.html.erb (Duration: 31.9ms | Allocations: 26990)
+Completed 200 OK in 40ms (Views: 32.0ms | ActiveRecord: 1.4ms | Allocations: 31616)
+
+
+Started POST "/lists/1/bookmarks" for ::1 at 2023-05-26 15:37:19 +0200
+Processing by BookmarksController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "bookmark"=>{"movie_id"=>"32", "comment"=>"aezae"}, "commit"=>"Add movie", "list_id"=>"1"}
+  [1m[36mList Load (0.2ms)[0m  [1m[34mSELECT "lists".* FROM "lists" WHERE "lists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/bookmarks_controller.rb:35:in `set_list'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/bookmarks_controller.rb:12:in `create'
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 32], ["LIMIT", 1]]
+  ↳ app/controllers/bookmarks_controller.rb:12:in `create'
+  [1m[36mBookmark Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "bookmarks" WHERE "bookmarks"."movie_id" = $1 AND "bookmarks"."list_id" = $2 LIMIT $3[0m  [["movie_id", 32], ["list_id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/bookmarks_controller.rb:12:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/bookmarks_controller.rb:12:in `create'
+  Rendering layout layouts/application.html.erb
+  Rendering bookmarks/new.html.erb within layouts/application
+  [1m[36mMovie Load (0.3ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/views/bookmarks/new.html.erb:8
+  Rendered bookmarks/new.html.erb within layouts/application (Duration: 14.1ms | Allocations: 16080)
+  Rendered shared/_navbar.html.erb (Duration: 0.9ms | Allocations: 642)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 31)
+  Rendered layout layouts/application.html.erb (Duration: 28.7ms | Allocations: 26976)
+Completed 200 OK in 36ms (Views: 28.8ms | ActiveRecord: 1.2ms | Allocations: 31582)
+
+
+Started POST "/lists/1/bookmarks" for ::1 at 2023-05-26 15:37:27 +0200
+Processing by BookmarksController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "bookmark"=>{"movie_id"=>"21", "comment"=>"aejdojadojfefzef"}, "commit"=>"Add movie", "list_id"=>"1"}
+  [1m[36mList Load (0.2ms)[0m  [1m[34mSELECT "lists".* FROM "lists" WHERE "lists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/bookmarks_controller.rb:35:in `set_list'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/bookmarks_controller.rb:12:in `create'
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/controllers/bookmarks_controller.rb:12:in `create'
+  [1m[36mBookmark Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "bookmarks" WHERE "bookmarks"."movie_id" = $1 AND "bookmarks"."list_id" = $2 LIMIT $3[0m  [["movie_id", 21], ["list_id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/bookmarks_controller.rb:12:in `create'
+  [1m[36mBookmark Create (0.9ms)[0m  [1m[32mINSERT INTO "bookmarks" ("comment", "movie_id", "list_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["comment", "aejdojadojfefzef"], ["movie_id", 21], ["list_id", 1], ["created_at", "2023-05-26 13:37:27.167381"], ["updated_at", "2023-05-26 13:37:27.167381"]]
+  ↳ app/controllers/bookmarks_controller.rb:12:in `create'
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/bookmarks_controller.rb:12:in `create'
+Redirected to http://localhost:3000/lists/1
+Completed 302 Found in 10ms (ActiveRecord: 2.4ms | Allocations: 4921)
+
+
+Started GET "/lists/1" for ::1 at 2023-05-26 15:37:27 +0200
+Processing by ListsController#show as TURBO_STREAM
+  Parameters: {"id"=>"1"}
+  [1m[36mList Load (0.2ms)[0m  [1m[34mSELECT "lists".* FROM "lists" WHERE "lists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/lists_controller.rb:34:in `set_list'
+  Rendering layout layouts/application.html.erb
+  Rendering lists/show.html.erb within layouts/application
+  [1m[36mMovie Count (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "movies" INNER JOIN "bookmarks" ON "movies"."id" = "bookmarks"."movie_id" WHERE "bookmarks"."list_id" = $1[0m  [["list_id", 1]]
+  ↳ app/views/lists/show.html.erb:5
+  [1m[36mMovie Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" INNER JOIN "bookmarks" ON "movies"."id" = "bookmarks"."movie_id" WHERE "bookmarks"."list_id" = $1 LIMIT $2[0m  [["list_id", 1], ["LIMIT", 1]]
+  ↳ app/views/lists/show.html.erb:9
+  [1m[36mMovie Load (0.3ms)[0m  [1m[34mSELECT "movies".* FROM "movies" INNER JOIN "bookmarks" ON "movies"."id" = "bookmarks"."movie_id" WHERE "bookmarks"."list_id" = $1[0m  [["list_id", 1]]
+  ↳ app/views/lists/show.html.erb:18
+  [1m[36mBookmark Load (0.2ms)[0m  [1m[34mSELECT "bookmarks".* FROM "bookmarks" WHERE "bookmarks"."list_id" = $1 AND "bookmarks"."movie_id" = $2 LIMIT $3[0m  [["list_id", 1], ["movie_id", 21], ["LIMIT", 1]]
+  ↳ app/views/lists/show.html.erb:19
+  [1m[36mReview Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "reviews" WHERE "reviews"."list_id" = $1 LIMIT $2[0m  [["list_id", 1], ["LIMIT", 1]]
+  ↳ app/views/lists/show.html.erb:41
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."list_id" = $1[0m  [["list_id", 1]]
+  ↳ app/views/lists/show.html.erb:44
+  [1m[36mMovie Load (0.3ms)[0m  [1m[34mSELECT "movies".* FROM "movies" ORDER BY "movies"."title" ASC[0m
+  ↳ app/views/bookmarks/_modal.html.erb:12
+  Rendered bookmarks/_modal.html.erb (Duration: 12.9ms | Allocations: 14901)
+  Rendered lists/show.html.erb within layouts/application (Duration: 36.7ms | Allocations: 35910)
+  Rendered shared/_navbar.html.erb (Duration: 0.8ms | Allocations: 644)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 31)
+  Rendered layout layouts/application.html.erb (Duration: 50.2ms | Allocations: 46665)
+Completed 200 OK in 52ms (Views: 48.6ms | ActiveRecord: 2.2ms | Allocations: 47468)
+
+
+Started POST "/lists/1/reviews" for ::1 at 2023-05-26 15:37:36 +0200
+Processing by ReviewsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "review"=>{"comment"=>"efzefzf", "rating"=>"5"}, "commit"=>"Create Review", "list_id"=>"1"}
+  [1m[36mList Load (0.2ms)[0m  [1m[34mSELECT "lists".* FROM "lists" WHERE "lists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:4:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/reviews_controller.rb:6:in `create'
+  [1m[36mReview Create (0.6ms)[0m  [1m[32mINSERT INTO "reviews" ("comment", "rating", "list_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["comment", "efzefzf"], ["rating", 5], ["list_id", 1], ["created_at", "2023-05-26 13:37:36.550464"], ["updated_at", "2023-05-26 13:37:36.550464"]]
+  ↳ app/controllers/reviews_controller.rb:6:in `create'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/reviews_controller.rb:6:in `create'
+Redirected to http://localhost:3000/lists/1
+Completed 302 Found in 10ms (ActiveRecord: 1.3ms | Allocations: 3520)
+
+
+Started GET "/lists/1" for ::1 at 2023-05-26 15:37:36 +0200
+Processing by ListsController#show as TURBO_STREAM
+  Parameters: {"id"=>"1"}
+  [1m[36mList Load (0.2ms)[0m  [1m[34mSELECT "lists".* FROM "lists" WHERE "lists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/lists_controller.rb:34:in `set_list'
+  Rendering layout layouts/application.html.erb
+  Rendering lists/show.html.erb within layouts/application
+  [1m[36mMovie Count (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "movies" INNER JOIN "bookmarks" ON "movies"."id" = "bookmarks"."movie_id" WHERE "bookmarks"."list_id" = $1[0m  [["list_id", 1]]
+  ↳ app/views/lists/show.html.erb:5
+  [1m[36mMovie Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "movies" INNER JOIN "bookmarks" ON "movies"."id" = "bookmarks"."movie_id" WHERE "bookmarks"."list_id" = $1 LIMIT $2[0m  [["list_id", 1], ["LIMIT", 1]]
+  ↳ app/views/lists/show.html.erb:9
+  [1m[36mMovie Load (0.3ms)[0m  [1m[34mSELECT "movies".* FROM "movies" INNER JOIN "bookmarks" ON "movies"."id" = "bookmarks"."movie_id" WHERE "bookmarks"."list_id" = $1[0m  [["list_id", 1]]
+  ↳ app/views/lists/show.html.erb:18
+  [1m[36mBookmark Load (0.2ms)[0m  [1m[34mSELECT "bookmarks".* FROM "bookmarks" WHERE "bookmarks"."list_id" = $1 AND "bookmarks"."movie_id" = $2 LIMIT $3[0m  [["list_id", 1], ["movie_id", 21], ["LIMIT", 1]]
+  ↳ app/views/lists/show.html.erb:19
+  [1m[36mReview Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "reviews" WHERE "reviews"."list_id" = $1 LIMIT $2[0m  [["list_id", 1], ["LIMIT", 1]]
+  ↳ app/views/lists/show.html.erb:41
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."list_id" = $1[0m  [["list_id", 1]]
+  ↳ app/views/lists/show.html.erb:44
+  [1m[36mMovie Load (0.3ms)[0m  [1m[34mSELECT "movies".* FROM "movies" ORDER BY "movies"."title" ASC[0m
+  ↳ app/views/bookmarks/_modal.html.erb:12
+  Rendered bookmarks/_modal.html.erb (Duration: 13.1ms | Allocations: 14908)
+  Rendered lists/show.html.erb within layouts/application (Duration: 35.3ms | Allocations: 34389)
+  Rendered shared/_navbar.html.erb (Duration: 0.9ms | Allocations: 646)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 36)
+  Rendered layout layouts/application.html.erb (Duration: 49.9ms | Allocations: 45162)
+Completed 200 OK in 52ms (Views: 48.5ms | ActiveRecord: 2.4ms | Allocations: 46004)
+
+
+Started GET "/" for ::1 at 2023-05-26 15:37:44 +0200
+Processing by ListsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (0.2ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  ↳ app/views/lists/index.html.erb:13
+  Rendered lists/index.html.erb within layouts/application (Duration: 23.0ms | Allocations: 1298)
+  Rendered shared/_navbar.html.erb (Duration: 0.8ms | Allocations: 642)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 31)
+  Rendered layout layouts/application.html.erb (Duration: 38.1ms | Allocations: 12524)
+Completed 200 OK in 39ms (Views: 38.2ms | ActiveRecord: 0.2ms | Allocations: 12783)
+
+
+Started GET "/" for ::1 at 2023-05-26 15:37:45 +0200
+Processing by ListsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (0.2ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  ↳ app/views/lists/index.html.erb:13
+  Rendered lists/index.html.erb within layouts/application (Duration: 22.1ms | Allocations: 1296)
+  Rendered shared/_navbar.html.erb (Duration: 0.8ms | Allocations: 642)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 31)
+  Rendered layout layouts/application.html.erb (Duration: 38.6ms | Allocations: 12522)
+Completed 200 OK in 39ms (Views: 38.8ms | ActiveRecord: 0.2ms | Allocations: 12780)
+
+
